@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>这一页搬家了</title>
+<script>(function(){
+  var R={"/":true,"/world":true,"/classes":true,"/talent":true,"/chooser":true,"/legacy":true,"/races":true,"/dungeons":true,"/dungeon":true,"/raids":true,"/systems":true,"/professions":true,"/glossary":true,"/timeline":true,"/skills":true,"/achievements":true,"/updates":true,"/rank":true,"/provenance":true,"/items":true,"/bis":true}, D="/glossary";
+  var h=String(location.hash||"").replace(/^#/,""), p=h.split("?")[0];
+  var q=location.search||"";
+  var ok=h!=="" && p.charAt(0)==="/" && Object.prototype.hasOwnProperty.call(R,p);
+  location.replace("./#" + (ok ? h : D + q));
+})();</script>
+<noscript><meta http-equiv="refresh" content="1; url=./#/glossary"></noscript>
+<p>这一页已经并入新版，正在跳转。没动的话请点<a href="./#/glossary">这里</a>。</p>
